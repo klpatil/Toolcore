@@ -63,17 +63,24 @@ namespace FortisCollections.Toolcore.Publish
                 // Trigger job
                 // Try for 10 seconds
                 // TODO :  Make this configurable
+
+                int sleepTime = 1000; //1000
+                int retryCount = 10; // 10
+                var publishJobName = "Publish";
                 Job job = null;
-                for (int i = 0; i <= 10; i++)
+                for (int i = 0; i <= retryCount; i++)
                 {
-                    job = Sitecore.Jobs.JobManager.GetJob(jobHandle);
+                    // Sitecore 91 was not giving job name
+                    // As it seems it has been changed
+                    // So, instead of JobHandle using publish job name
+                    job = Sitecore.Jobs.JobManager.GetJob(publishJobName);
                     if (job != null)
                     {
                         break;
                     }
                     else
                     {
-                        Thread.Sleep(1000);
+                        Thread.Sleep(sleepTime);
                     }
                 }
                 return job.Name;

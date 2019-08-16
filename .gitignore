@@ -49,3 +49,4 @@ _Lib/
 packages/*
 *.Fakes.*
 NuGet/
+/Source/.vs/FortisCollections.Toolcore/v15/Server/sqlite3

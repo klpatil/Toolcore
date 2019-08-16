@@ -16,7 +16,7 @@ namespace FortisCollections.Toolcore.Publish.Runner
         private static void Main(string[] args)
         {
             WriteMessage("------------------------");
-            WriteMessage("Toolcore - Publish (2.0) - Sitecore Publishing Service and Legacy Service Compatible");
+            WriteMessage("Toolcore - Publish (2.0) - Sitecore Publishing Service and Legacy Service Compatible. Last Updated Date : 15-Aug-2019");
             WriteMessage("------------------------");
 
             var options = new Options();
@@ -116,8 +116,9 @@ namespace FortisCollections.Toolcore.Publish.Runner
 
                 while (!status.Complete)
                 {
+
                     // TODO : Configurable?
-                    if (id == "PublishItem")
+                    if (id == "Publish")
                     {
                         WriteMessage("SPS Job doesn't update count. So, we have to rely on Status complete field : " + status.Message);
                     }
@@ -130,7 +131,8 @@ namespace FortisCollections.Toolcore.Publish.Runner
                         }
                     }
 
-                    Thread.Sleep(1500);
+                    //Thread.Sleep(1500);
+                    Thread.Sleep(1000);
                     status = publishingService.Check(id);
                 }
 
