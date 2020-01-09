@@ -1,4 +1,5 @@
 ﻿using Sitecore;
+using Sitecore.Abstractions;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Managers;
@@ -67,7 +68,7 @@ namespace FortisCollections.Toolcore.Publish
                 int sleepTime = 1000; //1000
                 int retryCount = 10; // 10
                 var publishJobName = "Publish";
-                Job job = null;
+                BaseJob job = null;
                 for (int i = 0; i <= retryCount; i++)
                 {
                     // Sitecore 91 was not giving job name

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortisCollections.Toolcore", "FortisCollections.Toolcore\FortisCollections.Toolcore.csproj", "{F086152B-E47B-4F44-943D-BF48C344DE58}"
 EndProject
@@ -89,5 +89,8 @@ Global
 		{A6A73E9F-C802-496B-93CC-4109F1947A23} = {7DEEB6BC-47EF-492C-A145-391DF0915198}
 		{DF7A5AD4-79D3-4362-982B-8B3D69D3E823} = {7DEEB6BC-47EF-492C-A145-391DF0915198}
 		{05CAFCFA-F61C-4387-9425-2F3A28F30D0B} = {7DEEB6BC-47EF-492C-A145-391DF0915198}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5596B5C1-5D2C-4ED7-8CD7-F207568197DF}
 	EndGlobalSection
 EndGlobal
