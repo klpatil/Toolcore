@@ -16,7 +16,7 @@ namespace FortisCollections.Toolcore.Publish.Runner
         private static void Main(string[] args)
         {
             WriteMessage("------------------------");
-            WriteMessage("Toolcore - Publish (2.0) - Sitecore Publishing Service and Legacy Service Compatible. Last Updated Date : 15-Aug-2019");
+            WriteMessage("Toolcore - Publish (2.0) - Sitecore Publishing Service and Legacy Service Compatible. SC 9.3. Last Updated Date : 9-JAN-2020");
             WriteMessage("------------------------");
 
             var options = new Options();
