@@ -16,7 +16,7 @@ namespace FortisCollections.Toolcore.Indexing.Runner
 		static void Main(string[] args)
 		{
 			WriteMessage("-------------------------");
-			WriteMessage("Toolcore - Indexing (1.0)");
+			WriteMessage("Toolcore - Indexing (3.0) - Updated by Kiran Patil on : 23-March-2021 for .NET Framework 4.7.2 and Sitecore 9.3");
 			WriteMessage("-------------------------");
 
 			var options = new Options();
@@ -48,7 +48,7 @@ namespace FortisCollections.Toolcore.Indexing.Runner
 				indexingService.Url = serviceUrl;
 				indexingService.Timeout = Convert.ToInt32(timeout.TotalMilliseconds);
 
-				WriteMessage("Initializing publishing process");
+				WriteMessage("Initializing Indexing process");
 				WriteMessage(string.Format("	Sitecore URL: {0}", serviceUrl));
 				WriteMessage(string.Format("	Indexes: {0}", indexNames.Any() ? indexNames.ToString() : "All"));
 
