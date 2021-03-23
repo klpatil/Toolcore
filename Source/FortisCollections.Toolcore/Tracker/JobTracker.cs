@@ -1,4 +1,5 @@
-﻿using Sitecore.Jobs;
+﻿using Sitecore.Abstractions;
+using Sitecore.Jobs;
 using Sitecore.SecurityModel;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,7 +68,7 @@ namespace FortisCollections.Toolcore.Tracker
 			return Create(jobName, job, messages);
 		}
 
-		public Progress Create(string id, Job job, IEnumerable<string> messages)
+		public Progress Create(string id, BaseJob job, IEnumerable<string> messages)
 		{
 			return new Progress
 			{

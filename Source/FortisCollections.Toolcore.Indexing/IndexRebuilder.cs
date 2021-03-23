@@ -1,4 +1,5 @@
 ﻿using FortisCollections.Toolcore.Tracker;
+using Sitecore.Abstractions;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Maintenance;
 using Sitecore.Jobs;
@@ -26,7 +27,7 @@ namespace FortisCollections.Toolcore.Indexing
 			return jobs;
 		}
 
-		public IProgress Create(Job job)
+		public IProgress Create(BaseJob job)
 		{
 			return new Progress
 			{
